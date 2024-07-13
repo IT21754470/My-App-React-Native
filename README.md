@@ -33,3 +33,9 @@ npm install
 
 6.Run the App
 npm start
+
+![Screenshot (1654)](https://github.com/user-attachments/assets/da5d9e47-a19a-464c-bb72-3aaac6f95a1e)
+![Screenshot (1658)](https://github.com/user-attachments/assets/aa8c758c-2342-4754-a27f-6f4e981b188a)
+![Screenshot (1659)](https://github.com/user-attachments/assets/f4ac5cab-71ae-494a-ae4d-cf569711ef3b)
+![Screenshot (1661)](https://github.com/user-attachments/assets/e56e6385-73cd-4079-9011-8ad533a13520)
+![Screenshot (1662)](https://github.com/user-attachments/assets/70a3f371-0ad8-49bf-813e-624322462b3c)
