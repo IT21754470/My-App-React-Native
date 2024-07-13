@@ -41,7 +41,7 @@ export default function SignUpScreen(){
         .then((userCredential) => {
           const user = userCredential.user;
           updateProfile(user, { displayName: name });
-          Alert.alert('Sign up successful', `Welcome, ${user.displayName}!`);
+          Alert.alert('Sign up successful', `Welcome, ${user.email}!`);
           navigation.push('login'); 
         })
         .catch((error) => {
