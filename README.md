@@ -34,6 +34,10 @@ npm install
 6.Run the App
 npm start
 
+7.Voice-text feature
+I try to create this feature and developed some codes but unable to get a expected output.
+
+
 ![Screenshot (1654)](https://github.com/user-attachments/assets/da5d9e47-a19a-464c-bb72-3aaac6f95a1e)
 ![Screenshot (1658)](https://github.com/user-attachments/assets/aa8c758c-2342-4754-a27f-6f4e981b188a)
 ![Screenshot (1659)](https://github.com/user-attachments/assets/f4ac5cab-71ae-494a-ae4d-cf569711ef3b)
