@@ -80,11 +80,7 @@ export default function LoginScreen(){
                 <Text className="text-[#ECCC77] underline">  Sign Up</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity onPress={()=> navigation.push('logout')}>
-                <Text className="text-[#ECCC77] underline">  Sign Up</Text>
-
-
-            </TouchableOpacity>
+           
            
       
              </View>
