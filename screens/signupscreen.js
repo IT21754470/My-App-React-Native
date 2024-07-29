@@ -49,24 +49,24 @@ export default function SignUpScreen(){
         });
     };
   return (
-    <View className='bg-black h-full w-full'>
+    <View style='bg-black h-full w-full'>
 
-        <View classNme="h-full w-full flex justify-around pt-29px pb-30 ">
+        <View style="h-full w-full flex justify-around pt-29px pb-30 ">
 
-            <View className='flex items-center '>
-        <Text className="text-white tracking-wider text-3xl pt-[90px] pb-[60px] font-bold gap-y-10">My App</Text>
+            <View style='flex items-center '>
+        <Text style="text-white tracking-wider text-3xl pt-[90px] pb-[60px] font-bold gap-y-10">My App</Text>
         </View>
 
-        <View className="flex items-center mx-3 space-y-4">
-            <View className="bg-[#383834] p-5 rounded-xl w-full ">
-            <TextInput className='text-white' placeholder='Name'
+        <View style="flex items-center mx-3 space-y-4">
+            <View style="bg-[#383834] p-5 rounded-xl w-full ">
+            <TextInput style='text-white' placeholder='Name'
             onChangeText={setName}
             placeholderTextColor={'gray'}/>
             </View>
             
 
-            <View className="bg-[#383834] p-5 rounded-xl w-full ">
-            <TextInput className='text-white' placeholder='Email Address' 
+            <View style="bg-[#383834] p-5 rounded-xl w-full ">
+            <TextInput style='text-white' placeholder='Email Address' 
             onChangeText={setEmail}
             placeholderTextColor={'gray'}/>
             </View>
@@ -74,8 +74,8 @@ export default function SignUpScreen(){
 
 
 
-            <View className="bg-[#383834] p-5 rounded-xl w-full flex-row  ">
-            <TextInput className='text-white' placeholder='password'
+            <View style="bg-[#383834] p-5 rounded-xl w-full flex-row  ">
+            <TextInput style='text-white' placeholder='password'
             
             onChangeText={(text)=>{
               setPassword(text);
@@ -91,27 +91,27 @@ export default function SignUpScreen(){
             />
  
 
-            <TouchableOpacity className='left-[245px]' onPress={()=>setPasswordVisible(!passwordVisible)}>
+            <TouchableOpacity style='left-[245px]' onPress={()=>setPasswordVisible(!passwordVisible)}>
                 <Ionicons name={passwordVisible ? 'eye-off' : 'eye'} size={24} color="gray" />
                 </TouchableOpacity>
        
                 </View>
                 
-                <View className="bg-[#383834] p-5 rounded-xl w-full   ">
-            <TextInput className='text-white' placeholder='confirm password' 
+                <View style="bg-[#383834] p-5 rounded-xl w-full   ">
+            <TextInput style='text-white' placeholder='confirm password' 
             onChangeText={setConfirmPassword}
             placeholderTextColor={'gray'}
             secureTextEntry={!passwordVisible}
             />
  </View>
 
-            <TouchableOpacity className='left-[150px] bottom-14 ' onPress={()=>setPasswordVisible(!passwordVisible)}>
+            <TouchableOpacity style='left-[150px] bottom-14 ' onPress={()=>setPasswordVisible(!passwordVisible)}>
                 <Ionicons name={passwordVisible ? 'eye-off' : 'eye'} size={24} color="gray" />
                 </TouchableOpacity>
 
-            <View className='space-y-[-16]'>
+            <View style='space-y-[-16]'>
 
-                <View className="text-white left-[110px] bottom-10 ">
+                <View style="text-white left-[110px] bottom-10 ">
                   <CheckBox
         
           title="One lowercase character"
@@ -120,7 +120,7 @@ export default function SignUpScreen(){
            containerStyle={{ backgroundColor: 'transparent', borderWidth: 0 }}
            />
         </View>
-        <View className="text-white left-[110px] bottom-10 ">
+        <View style="text-white left-[110px] bottom-10 ">
                   <CheckBox
         
           title="One lowercase character"
@@ -134,8 +134,8 @@ export default function SignUpScreen(){
 
 
 
-        <View className='bottom-36 right-24 space-y-[-16]'>
-        <View className="text-white  ">
+        <View style='bottom-36 right-24 space-y-[-16]'>
+        <View style="text-white  ">
                   <CheckBox
         
           title="One lowercase character"
@@ -144,7 +144,7 @@ export default function SignUpScreen(){
            containerStyle={{ backgroundColor: 'transparent', borderWidth: 0 }}
            />
         </View>
-        <View className="text-white  ">
+        <View style="text-white  ">
                   <CheckBox
         
           title="One lowercase character"
@@ -154,7 +154,7 @@ export default function SignUpScreen(){
            />
         </View>
 
-        <View className="text-white  ">
+        <View style="text-white  ">
                   <CheckBox
         
           title="One lowercase character"
@@ -165,21 +165,21 @@ export default function SignUpScreen(){
         </View>
 </View>
 
-            <View className="w-full flex items-center  bottom-40">
+            <View style="w-full flex items-center  bottom-40">
                 <TouchableOpacity
-                className="w-full bg-[#ECCC77] p-3 rounded-xl mb-3 'flex items-center"
+                style="w-full bg-[#ECCC77] p-3 rounded-xl mb-3 'flex items-center"
                 onPress={handleSignUp}
                 >
-                    <Text className="text-xl font-bold ">Sign Up</Text>
+                    <Text style="text-xl font-bold ">Sign Up</Text>
                 </TouchableOpacity>
             </View>
 
              <View>
-                <View className='flex-row justify-center bottom-28'>
-        <Text className="text-white ">Don't have an account? 
+                <View style='flex-row justify-center bottom-28'>
+        <Text style="text-white ">Don't have an account? 
             </Text>
             <TouchableOpacity onPress={()=> navigation.push('login')}>
-                <Text className="text-[#ECCC77] underline">  Sign In</Text>
+                <Text style="text-[#ECCC77] underline">  Sign In</Text>
             </TouchableOpacity>
       
              </View>

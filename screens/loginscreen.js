@@ -30,41 +30,41 @@ export default function LoginScreen(){
       };
     
   return (
-    <View className='bg-black h-full w-full'>
+    <View style='bg-black h-full w-full'>
 
-        <View classNme="h-full w-full flex justify-around pt-29px pb-30">
+        <View style="h-full w-full flex justify-around pt-29px pb-30">
 
-            <View className='flex items-center'>
-        <Text className="text-white tracking-wider text-3xl pt-[124px] pb-[89px] font-bold">My App</Text>
+            <View style='flex items-center'>
+        <Text style="text-white tracking-wider text-3xl pt-[124px] pb-[89px] font-bold">My App</Text>
         </View>
 
-        <View className="flex items-center mx-4 space-y-4">
-            <View className="bg-[#383834] p-5 rounded-xl w-full ">
-            <TextInput className='text-white' placeholder='Email'
+        <View style="flex items-center mx-4 space-y-4">
+            <View style="bg-[#383834] p-5 rounded-xl w-full ">
+            <TextInput style='text-white' placeholder='Email'
              onChangeText={setEmail}
             placeholderTextColor={'gray'}/>
             </View>
             
-            <View className="bg-[#383834] p-5 rounded-xl w-full  ">
-            <TextInput className='text-white' placeholder='password'
+            <View style="bg-[#383834] p-5 rounded-xl w-full  ">
+            <TextInput style='text-white' placeholder='password'
             onChangeText={setPassword} 
             placeholderTextColor={'gray'}
             secureTextEntry={!passwordVisible}
             />
  </View>
 
-            <TouchableOpacity className='left-[152px] bottom-14 ' onPress={()=>setPasswordVisible(!passwordVisible)}>
+            <TouchableOpacity style='left-[152px] bottom-14 ' onPress={()=>setPasswordVisible(!passwordVisible)}>
                 <Ionicons name={passwordVisible ? 'eye-off' : 'eye'} size={24} color="gray" />
                 </TouchableOpacity>
        
 
             <View>
-        <Text className="text-white left-[120px] bottom-12">Forgot Password?</Text>
+        <Text style="text-white left-[120px] bottom-12">Forgot Password?</Text>
         </View>
 
-        <View className="w-full flex items-center gap-10 bottom-12">
+        <View style="w-full flex items-center gap-10 bottom-12">
                         <TouchableOpacity  
-                            className="w-full bg-[#ECCC77] p-3 rounded-xl mb-3 flex items-center"
+                            style="w-full bg-[#ECCC77] p-3 rounded-xl mb-3 flex items-center"
                             onPress={handleLogin}
                         >
                             <Text className="text-[#ECCC77] text-xl text-black font-bold">Sign In</Text>
@@ -73,11 +73,11 @@ export default function LoginScreen(){
 
 
              <View>
-                <View className='flex-row justify-center top-36'>
-        <Text className="text-white ">Don't have an account? 
+                <View style='flex-row justify-center top-36'>
+        <Text style="text-white ">Don't have an account? 
             </Text>
             <TouchableOpacity onPress={()=> navigation.push('signup')}>
-                <Text className="text-[#ECCC77] underline">  Sign Up</Text>
+                <Text style="text-[#ECCC77] underline">  Sign Up</Text>
             </TouchableOpacity>
 
            
